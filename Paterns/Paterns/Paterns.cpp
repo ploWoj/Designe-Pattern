@@ -117,7 +117,7 @@ using namespace boost;
 
 // DEPENDENCY INVERSION RULE
 
-enum class Relationship {
+/*num class Relationship {
 	parent, 
 	child,
 	sibling
@@ -156,20 +156,19 @@ struct Research {
 			cout << "John has child called " << child.name_ << '\n';
 		}
 	}
-};
+};*/
+// END OF DEPENDENCY INVERSION
 
-int main() {
+#include "Builder.hpp"
 
-	Person parent{ "John" };
-	Person child1{ "Chris" }, child2{ "Matt" };
 
-	Relationships family;
-	family.add_parent_and_child(parent, child1);
-	family.add_parent_and_child(parent, child2);
+int main__()
+{
 
-	Research _(family, parent.name_);
-
+	getchar();
+	return 0;
 }
+
 
 
 
